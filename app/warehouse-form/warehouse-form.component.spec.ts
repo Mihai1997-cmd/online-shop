@@ -1,0 +1,26 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { WarehouseFormComponent } from './warehouse-form.component';
+import {Warehouse} from '../model/warehouse';
+
+describe('WarehouseFormComponent', () => {
+  let component: WarehouseFormComponent;
+  let fixture: ComponentFixture<WarehouseFormComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ WarehouseFormComponent ]
+    })
+      .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(WarehouseFormComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
